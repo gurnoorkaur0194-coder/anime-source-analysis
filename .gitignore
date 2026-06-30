@@ -30,10 +30,9 @@ env/
 # =========================
 # Data files (IMPORTANT)
 # =========================
-# Keep raw/processed data out of GitHub if large
-data/raw/
-data/processed/
-*.csv
+# Keep rawmdata out of GitHub if large
+
+
 *.xlsx
 *.parquet
 

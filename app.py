@@ -1,3 +1,4 @@
+from anyio import Path
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -20,7 +21,10 @@ st.set_page_config(
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv(r"C:\Users\GURNOOR KAUR\OneDrive\Desktop\anime-source-analysis\data\processed\anime_processed.csv")
+    from pathlib import Path
+
+    DATA_FILE = Path("data/processed/anime_processed.csv")
+    df = pd.read_csv(DATA_FILE)
     return df
 
 df = load_data()
