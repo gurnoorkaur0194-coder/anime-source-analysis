@@ -1,0 +1,8 @@
+Python
+Jupyter Notebook
+Pandas
+NumPy
+Plotly
+Scikit-learn
+Streamlit
+GitHub

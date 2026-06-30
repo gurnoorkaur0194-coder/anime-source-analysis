@@ -1,0 +1,85 @@
+# =========================
+# Python basics
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# =========================
+# Virtual environment
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# If you don't want notebooks history:
+# .ipynb_checkpoints/
+
+# =========================
+# Data files (IMPORTANT)
+# =========================
+# Keep raw/processed data out of GitHub if large
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.parquet
+
+# (Optional: if dataset is small, remove above CSV rule)
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Streamlit
+# =========================
+.streamlit/secrets.toml
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Environment variables
+# =========================
+.env
+.env.*
+
+# =========================
+# Model files (ML projects)
+# =========================
+*.pkl
+*.joblib
+*.h5
+*.keras
+
+# =========================
+# Large outputs / caches
+# =========================
+outputs/
+results/
+cache/
