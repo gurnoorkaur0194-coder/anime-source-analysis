@@ -1,6 +1,8 @@
 # 🎌 Anime Source Material Intelligence Dashboard
 
-An end-to-end Data Analysis and Machine Learning project exploring whether an anime's source material influences its ratings, popularity, and audience engagement.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://anime-source-analysis-wn4fzkvyubuk5vfl9za3yu.streamlit.app/)
+
+An end-to-end data analysis project exploring whether anime adapted from manga, novels, games, or original stories perform better.
 
 ---
 
