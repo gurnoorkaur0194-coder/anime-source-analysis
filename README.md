@@ -127,16 +127,13 @@ anime-source-analysis/
 ---
 
 ## 📸 Dashboard Preview
-![main landiing page](<Screenshot 2026-06-30 084957.png>)
-
-![charts](<Screenshot 2026-06-30 085039.png>)
-
-![more charts](<Screenshot 2026-06-30 085219.png>)
-
-![short ML analysis](<Screenshot 2026-06-30 085320.png>)
-
-![Want to find your favourite anime?](<Screenshot 2026-06-30 085351.png>)
-
+![main dashboard](images/main.png) 
+![chartsc1](images/charts1.png) 
+![charts 2](images/charts2.png) 
+![charts 3](images/charts3.png) 
+![charts 4](images/charts4.png) 
+![ml_analysis](images/ml_analysis.png) 
+![find_anime](images/find_anime.png)
 ---
 
 ## 🚀 How to Run This Project
