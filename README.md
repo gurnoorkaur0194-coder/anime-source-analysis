@@ -123,14 +123,29 @@ anime-source-analysis/
 
 ---
 
-## 🚀 Run the Project
+
+---
+
+## 📸 Dashboard Preview
+![main landiing page](<Screenshot 2026-06-30 084957.png>)
+
+![charts](<Screenshot 2026-06-30 085039.png>)
+
+![more charts](<Screenshot 2026-06-30 085219.png>)
+
+![short ML analysis](<Screenshot 2026-06-30 085320.png>)
+
+![Want to find your favourite anime?](<Screenshot 2026-06-30 085351.png>)
+
+---
+
+## 🚀 How to Run This Project
 
 ```bash
+git clone https://github.com/YOUR_USERNAME/anime-source-analysis.git
+cd anime-source-analysis
 pip install -r requirements.txt
-
 streamlit run app.py
-```
-
 ---
 
 ## 📌 Key Findings
