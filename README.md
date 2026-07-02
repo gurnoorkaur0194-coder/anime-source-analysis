@@ -6,7 +6,7 @@ An end-to-end data analysis project exploring whether anime adapted from manga, 
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 Anime can originate from different source materials such as Manga, Light Novels, Games, Original stories, or Web Manga.
 
@@ -14,7 +14,7 @@ This project investigates whether the source material has a measurable impact on
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Clean and preprocess the Anime Dataset 2023
 - Perform Exploratory Data Analysis (EDA)
@@ -25,7 +25,7 @@ This project investigates whether the source material has a measurable impact on
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python
 - Jupyter Notebook
@@ -39,7 +39,7 @@ This project investigates whether the source material has a measurable impact on
 
 ---
 
-## 📂 Project Workflow
+## Project Workflow
 
 ```text
 Raw Dataset
@@ -65,7 +65,7 @@ Interactive Streamlit Dashboard
 
 ---
 
-## 📊 Dashboard Features
+## Dashboard Features
 
 - Interactive source material filter
 - KPI cards
@@ -80,7 +80,7 @@ Interactive Streamlit Dashboard
 
 ---
 
-## 🤖 Machine Learning
+## Machine Learning
 
 Model Used:
 
@@ -100,7 +100,7 @@ Model Performance:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```text
 anime-source-analysis/
@@ -128,7 +128,7 @@ anime-source-analysis/
 
 ---
 
-## 📸 Dashboard Preview
+## Dashboard Preview
 ![main dashboard](images/main.png) 
 ![chartsc1](images/charts1.png) 
 ![charts 2](images/charts2.png) 
@@ -138,7 +138,7 @@ anime-source-analysis/
 ![find_anime](images/find_anime.png)
 ---
 
-## 🚀 How to Run This Project
+## How to Run This Project
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/anime-source-analysis.git
@@ -147,7 +147,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ---
 
-## 📌 Key Findings
+## Key Findings
 
 - Manga is the most common source material.
 - Manga and Novel adaptations generally achieve higher average scores.
@@ -156,7 +156,7 @@ streamlit run app.py
 
 ---
 
-## 👤 Author
+##Author
 
 **Gurnoor Kaur**
 

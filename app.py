@@ -4,9 +4,8 @@ import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 
-# --------------------------------------------------
+
 # PAGE CONFIG
-# --------------------------------------------------
 
 st.set_page_config(
     page_title="Anime Source Intelligence Dashboard",
@@ -15,9 +14,8 @@ st.set_page_config(
 )
 
 
-# --------------------------------------------------
+
 # LOAD DATA
-# --------------------------------------------------
 
 @st.cache_data
 def load_data():
@@ -29,9 +27,8 @@ def load_data():
 
 df = load_data()
 
-# --------------------------------------------------
+
 # CLEANING
-# --------------------------------------------------
 
 numeric_cols = [
     "Score",
@@ -45,9 +42,8 @@ for col in numeric_cols:
     if col in df.columns:
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
-# --------------------------------------------------
+
 # SIDEBAR
-# --------------------------------------------------
 
 st.sidebar.title("🎌 Filters")
 
@@ -61,9 +57,8 @@ selected_sources = st.sidebar.multiselect(
 
 filtered_df = df[df["Source_Clean"].isin(selected_sources)]
 
-# --------------------------------------------------
+
 # TITLE
-# --------------------------------------------------
 
 st.title("🎌 Anime Source Material Intelligence Dashboard")
 
@@ -91,9 +86,8 @@ popularity and audience engagement.
 • Audience engagement is closely linked with anime success.
 """)
 
-# --------------------------------------------------
+
 # KPI SECTION
-# --------------------------------------------------
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -123,9 +117,8 @@ with col4:
 
 st.divider()
 
-# --------------------------------------------------
+
 # CHART 1
-# --------------------------------------------------
 
 c1, c2 = st.columns(2)
 
@@ -148,7 +141,7 @@ with c1:
 
     st.plotly_chart(fig, use_container_width=True)
     st.caption(
-    "📌 Shows how many anime originate from each source material. "
+    " Shows how many anime originate from each source material. "
     "Manga adaptations dominate the industry."
 )
 
@@ -171,13 +164,13 @@ with c2:
 
     st.plotly_chart(fig, use_container_width=True)
     st.caption(
-    "📌 Compares average ratings across source types. "
+    " Compares average ratings across source types. "
     "Higher bars indicate stronger audience reception."
 )
 
-# --------------------------------------------------
+
 # CHART 2
-# --------------------------------------------------
+
 
 c3, c4 = st.columns(2)
 
@@ -192,7 +185,7 @@ with c3:
 
     st.plotly_chart(fig, use_container_width=True)
     st.caption(
-    "📌 Displays score consistency and spread. "
+    " Displays score consistency and spread. "
     "Tighter boxes indicate more consistent ratings."
 )
 
@@ -209,15 +202,14 @@ with c4:
 
     st.plotly_chart(fig, use_container_width=True)
     st.caption(
-    "📌 Examines audience size versus fan loyalty. "
+    " Examines audience size versus fan loyalty. "
     "More members generally lead to more favorites."
 )
 
-# --------------------------------------------------
-# POPULARITY ANALYSIS
-# --------------------------------------------------
 
-st.subheader("📈 Popularity Analysis")
+# POPULARITY ANALYSIS
+
+st.subheader(" Popularity Analysis")
 
 popularity = (
     filtered_df
@@ -236,15 +228,15 @@ fig = px.bar(
 
 st.plotly_chart(fig, use_container_width=True)
 st.caption(
-    "📌 Compares average popularity ranking by source material. "
+    " Compares average popularity ranking by source material. "
     "Lower ranks represent greater popularity."
 )
 
-# --------------------------------------------------
-# GENRE ANALYSIS
-# --------------------------------------------------
 
-st.subheader("🎭 Genre Analysis")
+# GENRE ANALYSIS
+
+
+st.subheader(" Genre Analysis")
 
 genre_df = filtered_df.copy()
 
@@ -274,13 +266,12 @@ fig = px.bar(
 
 st.plotly_chart(fig, use_container_width=True)
 st.caption(
-    "📌 Highlights the most common genres in the dataset. "
+    " Highlights the most common genres in the dataset. "
     "These genres drive a large share of anime production."
 )
 
-# --------------------------------------------------
+
 # ML INSIGHTS
-# --------------------------------------------------
 
 st.subheader(" Machine Learning Findings")
 
@@ -300,11 +291,11 @@ Actual scores were predicted using these features:
 """
 )
 
-# --------------------------------------------------
-# DATA TABLE
-# --------------------------------------------------
 
-st.subheader("📄 Anime Explorer")
+# DATA TABLE
+
+
+st.subheader(" Anime Explorer")
 
 search = st.text_input("Search Anime")
 
@@ -321,9 +312,9 @@ st.dataframe(
     use_container_width=True
 )
 
-# --------------------------------------------------
+
 # DOWNLOAD
-# --------------------------------------------------
+
 
 csv = display_df.to_csv(index=False)
 
